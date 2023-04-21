@@ -60,9 +60,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "git-flow": "^0.2.0",
-    "node-sass": "^7.0.3",
-    "prettier": "^2.8.7",
-    "sass-loader": "^13.2.2"
+    "prettier": "^2.8.7"
   },
   "config": {
     "commitizen": {
