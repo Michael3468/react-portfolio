@@ -1,6 +1,7 @@
 import { Footer, Navbar } from './components';
+import Contacts from './pages/Contacts';
 // import Home from './pages/Home';
-import Projects from './pages/Projects';
+// import Projects from './pages/Projects';
 
 import './assets/styles/main.css';
 
@@ -9,7 +10,8 @@ const App = () => (
     <Navbar />
 
     {/* <Home /> */}
-    <Projects />
+    {/* <Projects /> */}
+    <Contacts />
 
     <Footer />
   </div>

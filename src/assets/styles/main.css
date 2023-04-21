@@ -78,7 +78,7 @@ body {
 .title-1 {
 	margin-bottom: 60px;
 
-	font-size: 60px;
+	font-size: 42px;
 	font-weight: 700;
 	line-height: 1.3;
 	color: var(--title-1);
@@ -88,7 +88,7 @@ body {
 .title-2 {
 	margin-bottom: 20px;
 
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 700;
 	line-height: 1.3;
 }
