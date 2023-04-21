@@ -1,5 +1,5 @@
 import img from '../assets/img/projects/02-big.jpg';
-import gitHubIcon from '../components/Footer/icons/gitHub-black.svg';
+import BtnGitHub from '../components/BtnGitHub';
 
 const Project = () => (
   <main className="section">
@@ -13,10 +13,7 @@ const Project = () => (
           <p>Skills: React, Node.js, MongoDB</p>
         </div>
 
-        <a href="#!" className="btn-outline">
-          <img src={gitHubIcon} alt="github icon" />
-          GitHub repo
-        </a>
+        <BtnGitHub link="https://github.com" />
       </div>
     </div>
   </main>
