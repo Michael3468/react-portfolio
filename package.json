@@ -22,18 +22,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cm": "cz",
-    "version": "auto-changelog -p && git add HISTORY.md",
     "release-same-version": "git flow release start next && git flow release finish -n next",
     "release-minor": "git flow release start next && npm version minor && git flow release finish -n next",
     "release-patch": "git flow release start next && npm version patch && git flow release finish -n next",
     "push": "git checkout master && git push && git checkout develop && git push"
-  },
-  "auto-changelog": {
-    "output": "HISTORY.md",
-    "template": "keepachangelog",
-    "unreleased": true,
-    "commitLimit": false,
-    "ignoreCommitPattern": "^(build|chore|ci|docs|refactor|style|test|Initial.*|initial.*|Merge.*)"
   },
   "eslintConfig": {
     "extends": [
@@ -56,7 +48,6 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
-    "auto-changelog": "^2.4.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.38.0",
