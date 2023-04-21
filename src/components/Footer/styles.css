@@ -3,6 +3,9 @@
   padding: 60px 0 50px;
   background-color: var(--footer-bg);
   color: var(--footer-text);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__wrapper {
