@@ -3,6 +3,7 @@ import instagram from './icons/instagram.svg';
 import linkedIn from './icons/linkedIn.svg';
 import twitter from './icons/twitter.svg';
 import vk from './icons/vk.svg';
+
 import './styles.css';
 
 const Footer = () => (

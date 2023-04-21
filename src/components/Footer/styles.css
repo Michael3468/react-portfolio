@@ -3,9 +3,15 @@
   padding: 60px 0 50px;
   background-color: var(--footer-bg);
   color: var(--footer-text);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+
+  position:relative;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.footer__fixed {
+  position:fixed;
 }
 
 .footer__wrapper {
