@@ -5,12 +5,14 @@ import Contacts from './pages/Contacts';
 import Home from './pages/Home';
 import Project from './pages/Project';
 import Projects from './pages/Projects';
+import ScrollToTop from './utils/ScrollToTop';
 
 import './assets/styles/main.css';
 
 const App = () => (
   <div className="App">
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>

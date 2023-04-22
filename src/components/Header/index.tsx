@@ -4,7 +4,7 @@ const Header = () => (
   <header className="header">
     <div className="header__wrapper">
       <h1 className="header__title">
-        <p>Hi, my name is Yuri,</p>
+        <p>Hi, my name is Mikhail,</p>
         <span>a frontend developer</span>
       </h1>
 
