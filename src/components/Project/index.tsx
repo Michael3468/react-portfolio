@@ -1,18 +1,20 @@
 import { FC } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './styles.css';
 
 type Props = {
   title: string;
   img: string;
+  index: number;
 };
 
-const Project: FC<Props> = ({ title, img }) => (
+const Project: FC<Props> = ({ title, img, index }) => (
   <li className="project">
-    <a href="./project-page.html">
+    <NavLink to={`/project/${index}`}>
       <img src={img} alt={title} className="project__img" />
       <h3 className="project__title">{title}</h3>
-    </a>
+    </NavLink>
   </li>
 );
 
