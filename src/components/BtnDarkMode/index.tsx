@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
+import { useLocalStorage } from '../../utils/customHooks';
 import moon from './moon.svg';
 import sun from './sun.svg';
 
@@ -8,7 +9,7 @@ import './styles.css';
 type TDarkMode = 'light' | 'dark';
 
 const BtnDarkMode = () => {
-  const [darkMode, setDarkMode] = useState<TDarkMode>('light');
+  const [darkMode, setDarkMode] = useLocalStorage<TDarkMode>('darkMode', 'light');
   const btnRef = useRef<HTMLButtonElement>(null);
 
   const toggleDarkMode = () => {
