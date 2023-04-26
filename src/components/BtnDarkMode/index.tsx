@@ -27,6 +27,18 @@ const BtnDarkMode = () => {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const changeSiteColorMode = (event: MediaQueryListEvent) => {
+      const newColorScheme = event.matches ? 'dark' : 'light';
+      setDarkMode(newColorScheme);
+    };
+
+    systemColorScheme.addEventListener('change', changeSiteColorMode);
+    return () => systemColorScheme.removeEventListener('change', changeSiteColorMode);
+  }, [setDarkMode]);
+
   return (
     <button ref={btnRef} type="button" className="dark-mode-btn" onClick={toggleDarkMode}>
       <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
