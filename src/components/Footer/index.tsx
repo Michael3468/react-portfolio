@@ -9,36 +9,36 @@ import './styles.css';
 const Footer = () => (
   <footer className="footer">
     <div className="container">
-      <div className="footer__wrapper">
+      <div className="footer__wrapper d-flex flex-row">
         <ul className="footer__social">
           <li className="footer__social-item">
-            <a href="#!">
+            <a href="https://github.com/WhiteDevilMan">
               <img src={vk} alt="Link" />
             </a>
           </li>
           <li className="footer__social-item">
-            <a href="#!">
+            <a href="https://github.com/WhiteDevilMan">
               <img src={instagram} alt="Link" />
             </a>
           </li>
           <li className="footer__social-item">
-            <a href="#!">
+            <a href="https://github.com/WhiteDevilMan">
               <img src={twitter} alt="Link" />
             </a>
           </li>
           <li className="footer__social-item">
-            <a href="#!">
+            <a href="https://github.com/WhiteDevilMan">
               <img src={gitHub} alt="Link" />
             </a>
           </li>
           <li className="footer__social-item">
-            <a href="#!">
+            <a href="https://github.com/WhiteDevilMan">
               <img src={linkedIn} alt="Link" />
             </a>
           </li>
         </ul>
         <div className="footer__copyright">
-          <p className="footer__copyright-p">© 2023 localhost:3000</p>
+          <p className="footer__copyright-p">© 2023</p>
         </div>
       </div>
     </div>
