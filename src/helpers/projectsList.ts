@@ -10,9 +10,19 @@ import project05Big from '../assets/img/projects/05-big.jpg';
 import project05 from '../assets/img/projects/05.jpg';
 import project06Big from '../assets/img/projects/06-big.jpg';
 import project06 from '../assets/img/projects/06.jpg';
+import project07Big from '../assets/img/projects/07-big.png';
+import project07 from '../assets/img/projects/07.png';
 
 // eslint-disable-next-line import/prefer-default-export
 export const projects = [
+  {
+    title: 'Luxury Restaurant',
+    skills: 'HTML, CSS, JavaScript',
+    img: project07,
+    bigImg: project07Big,
+    gitHubLink: 'https://github.com/WhiteDevilMan/LuxRest',
+    liveDemo: 'https://whitedevilman.github.io/LuxRest/',
+  },
   {
     title: 'Gaming streaming portal',
     skills: 'React, Node.js, MongoDB',
