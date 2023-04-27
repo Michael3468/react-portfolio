@@ -29,6 +29,7 @@ export const projects = [
     img: project01,
     bigImg: project01Big,
     gitHubLink: 'http://github.com',
+    liveDemo: 'https://whitedevilman.github.io',
   },
   {
     title: 'Video service',
@@ -36,6 +37,7 @@ export const projects = [
     img: project02,
     bigImg: project02Big,
     gitHubLink: 'http://github.com',
+    liveDemo: 'https://whitedevilman.github.io',
   },
   {
     title: 'Video portal',
@@ -43,6 +45,7 @@ export const projects = [
     img: project03,
     bigImg: project03Big,
     gitHubLink: 'http://github.com',
+    liveDemo: 'https://whitedevilman.github.io',
   },
   {
     title: 'Dating app',
@@ -50,6 +53,7 @@ export const projects = [
     img: project04,
     bigImg: project04Big,
     gitHubLink: 'http://github.com',
+    liveDemo: 'https://whitedevilman.github.io',
   },
   {
     title: 'Landing',
@@ -57,6 +61,7 @@ export const projects = [
     img: project05,
     bigImg: project05Big,
     gitHubLink: 'http://github.com',
+    liveDemo: 'https://whitedevilman.github.io',
   },
   {
     title: 'Gaming community',
@@ -64,5 +69,6 @@ export const projects = [
     img: project06,
     bigImg: project06Big,
     gitHubLink: 'http://github.com',
+    liveDemo: 'https://whitedevilman.github.io',
   },
 ];

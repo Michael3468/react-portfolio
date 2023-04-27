@@ -1,5 +1,5 @@
-import './styles.css';
 import { FC } from 'react';
+import './styles.css';
 
 type Props = {
   link: string;
@@ -13,7 +13,6 @@ const BtnProjectLink: FC<Props> = ({ link, buttonText, img }) => (
     href={link}
     target="_blank"
     rel="noreferrer"
-    style={{ marginBottom: 10 }}
   >
     <img src={img} width={26} height={26} alt="github icon" />
     <span style={{ fontWeight: 'bold' }}>{buttonText}</span>
