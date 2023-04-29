@@ -1,3 +1,4 @@
+// npm install framer-motion
 import { motion, useAnimationControls } from 'framer-motion';
 import React, { FC, useState } from 'react';
 

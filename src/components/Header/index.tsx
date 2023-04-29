@@ -1,5 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-import TextAnimation from '../TextAnimation';
+import TextAnimation from '../../stories/TextAnimation';
 import './styles.css';
 
 const Header = () => {
