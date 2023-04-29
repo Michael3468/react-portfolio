@@ -1,0 +1,23 @@
+.btn-outline {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 20px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: box-shadow 0.2s ease-in, scale 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  box-shadow: none !important;
+  scale: 0.99;
+}
+
+.btn-outline:active {
+  position: relative;
+  top: 1px;
+}
