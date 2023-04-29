@@ -1,5 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-import TextAnimation from '../../stories/TextAnimation';
+import AnimationScale3d from '../../stories/AnimationScale3d';
 import './styles.css';
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
         <h1 className="header__title">
           <p>
             {name.map((letter, index) => (
-              <TextAnimation key={index}>{letter === ' ' ? '\u00A0' : letter}</TextAnimation>
+              <AnimationScale3d key={index}>{letter === ' ' ? '\u00A0' : letter}</AnimationScale3d>
             ))}
           </p>
           <span>frontend developer</span>

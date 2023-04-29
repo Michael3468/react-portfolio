@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import TextAnimation from './index';
+import AnimationScale3d from './index';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Example/TextAnimation',
-  component: TextAnimation,
+  title: 'Example/AnimationScale3d',
+  component: AnimationScale3d,
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof TextAnimation>;
+} satisfies Meta<typeof AnimationScale3d>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -17,6 +17,8 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     children: 'Hello world',
+    transitionTimes: [0, 0.4, 0.6, 0.7, 0.8, 0.9],
+    duration: 1,
   },
   parameters: {
     componentSource: {
@@ -25,10 +27,10 @@ const stringArr = "String to animate each letter".split('');
 
 <p>
   {stringArr.map((letter, index) => (
-    <TextAnimation key={index}>
+    <AnimationScale3d key={index}>
       // there are must be one '\\' before u00A0
       {letter === ' ' ? '\\u00A0' : letter}
-    </TextAnimation>
+    </AnimationScale3d>
   ))}
 </p>
       `,

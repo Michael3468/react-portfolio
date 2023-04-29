@@ -4,9 +4,16 @@ import React, { FC, useState } from 'react';
 
 type Props = {
   children: React.ReactNode;
+  transitionTimes?: number[];
+  duration?: number;
 };
 
-const TextAnimation: FC<Props> = ({ children }) => {
+/**
+ * @param transitionTimes {number[]} array of number between 0 and 1.
+ * example: [0, 0.4, 0.6, 0.7, 0.8, 0.9]
+ * transitionTimes array must contain same count of number as 'transform' array
+ */
+const AnimationScale3d: FC<Props> = ({ children, transitionTimes, duration }) => {
   const controls = useAnimationControls();
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
@@ -21,8 +28,8 @@ const TextAnimation: FC<Props> = ({ children }) => {
         'scale3d(1, 1, 1)',
       ],
       transition: {
-        times: [0, 0.4, 0.6, 0.7, 0.8, 0.9],
-        duration: 1,
+        times: transitionTimes,
+        duration,
       },
     });
     setIsPlaying(true);
@@ -42,4 +49,9 @@ const TextAnimation: FC<Props> = ({ children }) => {
   );
 };
 
-export default TextAnimation;
+AnimationScale3d.defaultProps = {
+  transitionTimes: [0, 0.4, 0.6, 0.7, 0.8, 0.9],
+  duration: 1,
+};
+
+export default AnimationScale3d;
