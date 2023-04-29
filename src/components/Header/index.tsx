@@ -1,22 +1,32 @@
+/* eslint-disable react/no-array-index-key */
+import TextAnimation from '../TextAnimation';
 import './styles.css';
 
-const Header = () => (
-  <header className="header">
-    <div className="header__wrapper">
-      <h1 className="header__title">
-        <p>Hi, my name is Mikhail,</p>
-        <span>a frontend developer</span>
-      </h1>
+const Header = () => {
+  const name = "Hi, I'm Mikhail,".split('');
 
-      <div className="header__text">
-        <p className="header__text-p">with passion for learning and creating.</p>
-      </div>
+  return (
+    <header className="header">
+      <div className="header__wrapper">
+        <h1 className="header__title">
+          <p>
+            {name.map((letter, index) => (
+              <TextAnimation key={index}>{letter === ' ' ? '\u00A0' : letter}</TextAnimation>
+            ))}
+          </p>
+          <span>frontend developer</span>
+        </h1>
 
-      {/* <a href="#!" className="btn">
+        <div className="header__text">
+          <p className="header__text-p">with passion for learning and creating.</p>
+        </div>
+
+        {/* <a href="#!" className="btn">
         Download CV
       </a> */}
-    </div>
-  </header>
-);
+      </div>
+    </header>
+  );
+};
 
 export default Header;
