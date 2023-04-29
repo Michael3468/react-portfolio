@@ -77,7 +77,8 @@
     "git-flow": "^0.2.0",
     "prettier": "^2.8.7",
     "prop-types": "^15.8.1",
-    "storybook": "^7.0.7"
+    "storybook": "^7.0.7",
+    "storybook-source-code-addon": "^1.2.0"
   },
   "config": {
     "commitizen": {
