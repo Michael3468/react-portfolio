@@ -1,13 +1,14 @@
 import { useParams } from 'react-router-dom';
 
-import BtnProjectLink from '../components/BtnProjectLink';
-import gitHubIcon from '../components/BtnProjectLink/gitHub-black.svg';
-import liveDemo from '../components/BtnProjectLink/live-demo-icon.svg';
 import { projects } from '../helpers/projectsList';
+import gitHubIcon from '../stories/assets/images/icons/gitHub-black.svg';
+import liveDemo from '../stories/assets/images/icons/live-demo-icon.svg';
+import ButtonIconWithLink from '../stories/ButtonIconWithLink';
 
 const Project = () => {
   const { id } = useParams();
   const project = projects[Number(id)];
+  const buttonGradient = 'linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0.5))';
 
   return (
     <main className="section">
@@ -15,16 +16,29 @@ const Project = () => {
         <div className="project-details">
           <h1 className="title-1">{project.title}</h1>
 
-          <img src={project.bigImg} alt="" className="project-details__cover" />
+          <img src={project.bigImg} alt={project.title} className="project-details__cover" />
 
           <div className="project-details__desc">
             <p>{`Skills: ${project.skills}`}</p>
           </div>
 
           <div>
-            <BtnProjectLink link={project.gitHubLink} buttonText="GitHub Repo" img={gitHubIcon} />
+            <ButtonIconWithLink
+              link={project.gitHubLink}
+              buttonText="GitHub"
+              img={gitHubIcon}
+              altText="github repo"
+              backgroundColor={buttonGradient}
+              style={{ marginBottom: 10 }}
+            />
 
-            <BtnProjectLink link={project.liveDemo} buttonText="Live Demo" img={liveDemo} />
+            <ButtonIconWithLink
+              link={project.liveDemo}
+              buttonText="Live Demo"
+              img={liveDemo}
+              altText="live demo"
+              backgroundColor={buttonGradient}
+            />
           </div>
         </div>
       </div>
