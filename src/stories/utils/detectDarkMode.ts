@@ -1,4 +1,4 @@
-import { TDarkMode } from '../types';
+import { TDarkMode } from '../../types';
 
 const isDarkModeEnabled = (): boolean =>
   window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
