@@ -1,5 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import AnimationScale3d from '../../stories/components/AnimationScale3d';
+import AnimationText from '../../stories/components/AnimationText';
 import './styles.css';
 
 const Header = () => {
@@ -14,11 +15,23 @@ const Header = () => {
               <AnimationScale3d key={index}>{letter === ' ' ? '\u00A0' : letter}</AnimationScale3d>
             ))}
           </p>
-          <span>frontend developer</span>
         </h1>
+        <AnimationText
+          text="frontend developer"
+          animationType="words"
+          delayChildren={5}
+          style={{ fontSize: 36, fontWeight: 'bold', marginRight: 15 }}
+        />
 
         <div className="header__text">
-          <p className="header__text-p">with passion for learning and creating.</p>
+          <AnimationText
+            text="with passion for learning and creating"
+            animationType="letters"
+            staggerChildren={0.05}
+            delayChildren={7}
+            hiddenX={-20}
+            hiddenY={-20}
+          />
         </div>
 
         {/* <a href="#!" className="btn">
