@@ -1,4 +1,5 @@
 /* eslint-disable react/no-array-index-key */
+import { styles } from '../../assets/constants';
 import AnimationScale3d from '../../stories/components/Animations/AnimationScale3d';
 import AnimationText from '../../stories/components/Animations/AnimationText';
 import './styles.css';
@@ -9,18 +10,21 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__wrapper">
-        <h1 className="header__title">
-          <p>
-            {name.map((letter, index) => (
-              <AnimationScale3d key={index}>{letter === ' ' ? '\u00A0' : letter}</AnimationScale3d>
-            ))}
-          </p>
+        <h1 className="header__title" style={{ textShadow: `${styles.mainTheme.textShadow}` }}>
+          {name.map((letter, index) => (
+            <AnimationScale3d key={index}>{letter === ' ' ? '\u00A0' : letter}</AnimationScale3d>
+          ))}
         </h1>
         <AnimationText
           text="frontend developer"
           animationType="words"
           delayChildren={5}
-          style={{ fontSize: 36, fontWeight: 'bold', marginRight: 15 }}
+          style={{
+            fontSize: 36,
+            fontWeight: 'bold',
+            marginRight: 15,
+            textShadow: `${styles.mainTheme.textShadow}`,
+          }}
         />
 
         <div className="header__text">
@@ -31,6 +35,7 @@ const Header = () => {
             delayChildren={7}
             hiddenX={-20}
             hiddenY={-20}
+            style={{ textShadow: `${styles.mainTheme.textShadow}` }}
           />
         </div>
 
