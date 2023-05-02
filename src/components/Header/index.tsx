@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
-import AnimationScale3d from '../../stories/Animations/AnimationScale3d';
-import AnimationText from '../../stories/Animations/AnimationText';
+import AnimationScale3d from '../../stories/components/Animations/AnimationScale3d';
+import AnimationText from '../../stories/components/Animations/AnimationText';
 import './styles.css';
 
 const Header = () => {

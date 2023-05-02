@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import github from '../../assets/images/icons/gitHub-black.svg';
+import github from '../../../assets/images/icons/gitHub-black.svg';
 import ButtonIconWithLink from './index';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Example/ButtonIconWithLink',
   component: ButtonIconWithLink,
   tags: ['autodocs'],
   argTypes: {},
