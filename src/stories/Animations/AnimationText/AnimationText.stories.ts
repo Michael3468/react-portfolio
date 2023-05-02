@@ -5,7 +5,6 @@ import AnimationText from './index';
 // More on how to set up stories at:
 // https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: 'Example/AnimationText',
   component: AnimationText,
   tags: ['autodocs'],
   argTypes: {},
