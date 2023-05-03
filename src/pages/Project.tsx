@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 
+import { styles } from '../assets/constants';
 import { projects } from '../helpers/projectsList';
 import gitHubIcon from '../stories/assets/images/icons/gitHub-black.svg';
 import liveDemo from '../stories/assets/images/icons/live-demo-icon.svg';
@@ -14,11 +15,13 @@ const Project = () => {
     <main className="section">
       <div className="container">
         <div className="project-details">
-          <h1 className="title-1">{project.title}</h1>
+          <h1 className="title-1" style={{ textShadow: `${styles.mainTheme.textShadow}` }}>
+            {project.title}
+          </h1>
 
           <img src={project.bigImg} alt={project.title} className="project-details__cover" />
 
-          <div className="project-details__desc">
+          <div className="project-details__desc text-shadow">
             <p>{`Skills: ${project.skills}`}</p>
           </div>
 

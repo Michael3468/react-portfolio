@@ -13,17 +13,17 @@ const Contacts = () => (
           <p>Moscow, Russia</p>
         </li> */}
         <li className="content-list__item">
-          <h2 className="title-2" style={{ textShadow: `${styles.mainTheme.textShadow}` }}>
-            Telegram
-          </h2>
-          <a href="https://t.me/rhccoder">Click to send message</a>
+          <h2 className="title-2 text-shadow">Telegram</h2>
+          <a href="https://t.me/rhccoder" className="text-shadow">
+            Click to send message
+          </a>
         </li>
         <li className="content-list__item">
-          <h2 className="title-2" style={{ textShadow: `${styles.mainTheme.textShadow}` }}>
-            Email
-          </h2>
+          <h2 className="title-2 text-shadow">Email</h2>
           <p>
-            <a href="mailto:mikhail3468@yandex.ru">mikhail3468@yandex.ru</a>
+            <a href="mailto:mikhail3468@yandex.ru" className="text-shadow">
+              mikhail3468@yandex.ru
+            </a>
           </p>
         </li>
       </ul>
