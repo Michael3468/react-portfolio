@@ -29,7 +29,7 @@ const Header = () => {
           }}
         />
 
-        <div className="header__text">
+        <div className="header__text" style={{ marginTop: 20 }}>
           <AnimationText
             text="with passion for learning and creating"
             animationType="letters"
