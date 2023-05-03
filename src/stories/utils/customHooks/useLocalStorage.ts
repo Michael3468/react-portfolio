@@ -5,7 +5,11 @@ const getStorageValue = <T>(key: string, defaultValue: T): T => {
 
   let storageValue: T | null = null;
   if (savedData) {
-    storageValue = JSON.parse(savedData);
+    if (typeof savedData === 'string') {
+      storageValue = savedData as T;
+    } else {
+      storageValue = JSON.parse(savedData);
+    }
   }
   return storageValue || defaultValue;
 };
@@ -25,7 +29,13 @@ export const useLocalStorage = <T>(
 ): [T, React.Dispatch<React.SetStateAction<T>>] => {
   const [value, setValue] = useState(() => getStorageValue<T>(key, defaultValue));
 
-  useEffect(() => localStorage.setItem(key, JSON.stringify(value)), [key, value]);
+  useEffect(() => {
+    if (typeof value === 'string') {
+      localStorage.setItem(key, value);
+    } else {
+      localStorage.setItem(key, JSON.stringify(value));
+    }
+  }, [key, value]);
 
   return [value, setValue];
 };
