@@ -12,7 +12,9 @@ const Header = () => {
       <div className="header__wrapper">
         <h1 className="header__title" style={{ textShadow: `${styles.mainTheme.textShadow}` }}>
           {name.map((letter, index) => (
-            <AnimationScale3d key={index}>{letter === ' ' ? '\u00A0' : letter}</AnimationScale3d>
+            <AnimationScale3d key={index} startOnInit>
+              {letter === ' ' ? '\u00A0' : letter}
+            </AnimationScale3d>
           ))}
         </h1>
         <AnimationText
