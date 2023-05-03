@@ -17,7 +17,7 @@ const Footer = () => (
               <img
                 style={{ filter: `drop-shadow(${styles.mainTheme.textShadow})` }}
                 src={vk}
-                alt="Link"
+                alt="link to vk"
               />
             </a>
           </li>
@@ -26,7 +26,7 @@ const Footer = () => (
               <img
                 style={{ filter: `drop-shadow(${styles.mainTheme.textShadow})` }}
                 src={instagram}
-                alt="Link"
+                alt="link to instagram"
               />
             </a>
           </li>
@@ -35,7 +35,7 @@ const Footer = () => (
               <img
                 style={{ filter: `drop-shadow(${styles.mainTheme.textShadow})` }}
                 src={twitter}
-                alt="Link"
+                alt="link to twitter"
               />
             </a>
           </li>
@@ -44,7 +44,7 @@ const Footer = () => (
               <img
                 style={{ filter: `drop-shadow(${styles.mainTheme.textShadow})` }}
                 src={gitHub}
-                alt="Link"
+                alt="link to github"
               />
             </a>
           </li>
@@ -53,7 +53,7 @@ const Footer = () => (
               <img
                 style={{ filter: `drop-shadow(${styles.mainTheme.textShadow})` }}
                 src={linkedIn}
-                alt="Link"
+                alt="link to linkedin"
               />
             </a>
           </li>
