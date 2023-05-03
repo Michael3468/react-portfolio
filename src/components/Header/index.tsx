@@ -18,7 +18,7 @@ const Header = () => {
         <AnimationText
           text="frontend developer"
           animationType="words"
-          delayChildren={5}
+          delayChildren={3}
           style={{
             fontSize: 36,
             fontWeight: 'bold',
@@ -32,7 +32,7 @@ const Header = () => {
             text="with passion for learning and creating"
             animationType="letters"
             staggerChildren={0.05}
-            delayChildren={7}
+            delayChildren={5}
             hiddenX={-20}
             hiddenY={-20}
             style={{ textShadow: `${styles.mainTheme.textShadow}` }}
