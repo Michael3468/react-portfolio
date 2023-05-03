@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
+import { styles } from '../../assets/constants';
 import BtnDarkMode from '../BtnDarkMode';
 
 import './styles.css';
@@ -13,14 +14,18 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-row">
           <NavLink to="/" className="logo">
-            <strong>Portfolio</strong>
+            <strong style={{ textShadow: `${styles.mainTheme.textShadow}` }}>Portfolio</strong>
           </NavLink>
 
           <BtnDarkMode />
 
           <ul className="nav-list">
             <li className="nav-list__item">
-              <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? activeLink : normalLink)}
+                style={{ textShadow: `${styles.mainTheme.textShadow}` }}
+              >
                 Home
               </NavLink>
             </li>
@@ -28,6 +33,7 @@ const Navbar = () => {
               <NavLink
                 to="/projects"
                 className={({ isActive }) => (isActive ? activeLink : normalLink)}
+                style={{ textShadow: `${styles.mainTheme.textShadow}` }}
               >
                 Projects
               </NavLink>
@@ -36,6 +42,7 @@ const Navbar = () => {
               <NavLink
                 to="/contacts"
                 className={({ isActive }) => (isActive ? activeLink : normalLink)}
+                style={{ textShadow: `${styles.mainTheme.textShadow}` }}
               >
                 Contacts
               </NavLink>

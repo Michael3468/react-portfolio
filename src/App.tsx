@@ -5,7 +5,7 @@ import Contacts from './pages/Contacts';
 import Home from './pages/Home';
 import Project from './pages/Project';
 import Projects from './pages/Projects';
-import ScrollToTop from './utils/ScrollToTop';
+import ScrollToTop from './stories/utils/ScrollToTop';
 
 import './assets/styles/main.css';
 

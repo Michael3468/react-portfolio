@@ -1,23 +1,24 @@
 // npm install framer-motion
 import { motion, useAnimationControls } from 'framer-motion';
-import React, { FC, useState } from 'react';
+import React, { FC, useCallback, useEffect, useState } from 'react';
 
 type Props = {
   children: React.ReactNode;
   transitionTimes?: number[];
   duration?: number;
+  startOnInit?: boolean;
 };
 
 /**
  * @param transitionTimes {number[]} array of number between 0 and 1.
  * example: [0, 0.4, 0.6, 0.7, 0.8, 0.9]
- * transitionTimes array must contain same count of number as 'transform' array
+ * transitionTimes array must contain same count of numbers as 'transform' array
  */
-const AnimationScale3d: FC<Props> = ({ children, transitionTimes, duration }) => {
+const AnimationScale3d: FC<Props> = ({ children, transitionTimes, duration, startOnInit }) => {
   const controls = useAnimationControls();
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
-  const rubberBand = () => {
+  const rubberBand = useCallback(() => {
     controls.start({
       transform: [
         'scale3d(1, 1, 1)',
@@ -33,7 +34,13 @@ const AnimationScale3d: FC<Props> = ({ children, transitionTimes, duration }) =>
       },
     });
     setIsPlaying(true);
-  };
+  }, [controls, duration, transitionTimes]);
+
+  useEffect(() => {
+    if (startOnInit) {
+      rubberBand();
+    }
+  }, [rubberBand, startOnInit]);
 
   return (
     <motion.span
@@ -52,6 +59,7 @@ const AnimationScale3d: FC<Props> = ({ children, transitionTimes, duration }) =>
 AnimationScale3d.defaultProps = {
   transitionTimes: [0, 0.4, 0.6, 0.7, 0.8, 0.9],
   duration: 1,
+  startOnInit: false,
 };
 
 export default AnimationScale3d;
