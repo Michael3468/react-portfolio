@@ -6,18 +6,35 @@ import project03Big from '../assets/img/projects/03-big.jpg';
 import project03 from '../assets/img/projects/03.jpg';
 import project04Big from '../assets/img/projects/04-big.jpg';
 import project04 from '../assets/img/projects/04.jpg';
-import project05Big from '../assets/img/projects/05-big.jpg';
-import project05 from '../assets/img/projects/05.jpg';
 import project06Big from '../assets/img/projects/06-big.jpg';
 import project06 from '../assets/img/projects/06.jpg';
 import project07Big from '../assets/img/projects/07-big.png';
 import project07 from '../assets/img/projects/07.png';
+import project08Big from '../assets/img/projects/08-big.png';
+import project08 from '../assets/img/projects/08.png';
+
+type TProjects = {
+  title: string;
+  skills: string;
+  img: string;
+  bigImg: string;
+  gitHubLink: string;
+  liveDemo: string;
+};
 
 // eslint-disable-next-line import/prefer-default-export
-export const projects = [
+export const projects: TProjects[] = [
   {
-    title: 'Luxury Restaurant',
-    skills: 'HTML, CSS, JavaScript',
+    title: 'Booking Service',
+    skills: 'Pug, SCSS, JavaScript',
+    img: project08,
+    bigImg: project08Big,
+    gitHubLink: 'https://github.com/WhiteDevilMan/BookingService',
+    liveDemo: 'https://whitedevilman.github.io/BookingService/',
+  },
+  {
+    title: 'Landing',
+    skills: 'Pug, SCSS, JavaScript, jQuery',
     img: project07,
     bigImg: project07Big,
     gitHubLink: 'https://github.com/WhiteDevilMan/LuxRest',
@@ -52,14 +69,6 @@ export const projects = [
     skills: 'React Native',
     img: project04,
     bigImg: project04Big,
-    gitHubLink: 'http://github.com',
-    liveDemo: 'https://whitedevilman.github.io',
-  },
-  {
-    title: 'Landing',
-    skills: 'HTML, CSS, JS',
-    img: project05,
-    bigImg: project05Big,
     gitHubLink: 'http://github.com',
     liveDemo: 'https://whitedevilman.github.io',
   },
