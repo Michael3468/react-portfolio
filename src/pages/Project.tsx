@@ -19,7 +19,16 @@ const Project = () => {
             {project.title}
           </h1>
 
-          <img src={project.bigImg} alt={project.title} className="project-details__cover" />
+          <div
+            style={{
+              padding: 20,
+              marginBottom: 40,
+              background: `${project.background}`,
+              borderRadius: 10,
+            }}
+          >
+            <img src={project.bigImg} alt={project.title} className="project-details__cover" />
+          </div>
 
           <div className="project-details__desc text-shadow">
             <p>{`Skills: ${project.skills}`}</p>

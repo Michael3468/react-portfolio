@@ -161,7 +161,6 @@ body {
 
 .project-details__cover {
   max-width: 100%;
-  margin-bottom: 40px;
 
   box-shadow: var(--box-shadow);
   border-radius: 10px;
