@@ -11,7 +11,10 @@ type Props = {
 };
 
 const Project: FC<Props> = ({ title, img, index }) => (
-  <li className="project pulse-animation">
+  <li
+    className="project pulse-animation"
+    style={!img ? { display: 'flex', alignItems: 'center' } : {}}
+  >
     <NavLink to={`/project/${index}`}>
       {img && <img src={img} alt={title} className="project__img" />}
       <h3 className="project__title">{title}</h3>
