@@ -1,5 +1,8 @@
 .project {
+  display: flex;
+  justify-content: center;
   max-width: 370px;
+  width: 100%;
   background-color: var(--project-card-bg);
   box-shadow: var(--box-shadow);
   border-radius: 10px;
@@ -10,7 +13,10 @@
 }
 
 .project__title {
-  padding: 15px 20px 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.3;
