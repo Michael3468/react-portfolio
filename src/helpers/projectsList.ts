@@ -12,6 +12,8 @@ import project07Big from '../assets/img/projects/07-big.png';
 import project07 from '../assets/img/projects/07.png';
 import project08Big from '../assets/img/projects/08-big.png';
 import project08 from '../assets/img/projects/08.png';
+import project09Big from '../assets/img/projects/09-big.png';
+import project09 from '../assets/img/projects/09.png';
 
 type TProjects = {
   title: string;
@@ -25,8 +27,16 @@ type TProjects = {
 // eslint-disable-next-line import/prefer-default-export
 export const projects: TProjects[] = [
   {
+    title: 'jQuery plugin',
+    skills: 'Pug, SCSS, jQuery, TypeScript, Jest, MVP, Webpack',
+    img: project09,
+    bigImg: project09Big,
+    gitHubLink: 'https://github.com/WhiteDevilMan/RangeSlider',
+    liveDemo: 'https://whitedevilman.github.io/RangeSlider/',
+  },
+  {
     title: 'Booking Service',
-    skills: 'Pug, SCSS, JavaScript',
+    skills: 'Pug, SCSS, JavaScript, Webpack',
     img: project08,
     bigImg: project08Big,
     gitHubLink: 'https://github.com/WhiteDevilMan/BookingService',
