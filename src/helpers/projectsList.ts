@@ -14,12 +14,15 @@ import project08Big from '../assets/img/projects/08-big.png';
 import project08 from '../assets/img/projects/08.png';
 import project09Big from '../assets/img/projects/09-big.png';
 import project09 from '../assets/img/projects/09.png';
+import project10Big from '../assets/img/projects/10-big.png';
+import project10 from '../assets/img/projects/10.png';
 
 type TProjects = {
   title: string;
   skills: string;
   img: string;
   bigImg: string;
+  background: string;
   gitHubLink: string;
   liveDemo: string;
 };
@@ -27,10 +30,20 @@ type TProjects = {
 // eslint-disable-next-line import/prefer-default-export
 export const projects: TProjects[] = [
   {
+    title: 'Social',
+    skills: 'Next.js TailwindCSS, Firebase',
+    img: project10,
+    bigImg: project10Big,
+    background: 'rgb(98, 0, 153)',
+    gitHubLink: 'https://github.com/WhiteDevilMan/twitter-clone',
+    liveDemo: 'https://twitter-clone-rhccoder.vercel.app/',
+  },
+  {
     title: 'jQuery plugin',
     skills: 'Pug, SCSS, jQuery, TypeScript, Jest, MVP, Webpack',
     img: project09,
     bigImg: project09Big,
+    background: 'rgb(108, 108, 255)',
     gitHubLink: 'https://github.com/WhiteDevilMan/RangeSlider',
     liveDemo: 'https://whitedevilman.github.io/RangeSlider/',
   },
@@ -39,6 +52,7 @@ export const projects: TProjects[] = [
     skills: 'Pug, SCSS, JavaScript, Webpack',
     img: project08,
     bigImg: project08Big,
+    background: 'rgb(64, 255, 149)',
     gitHubLink: 'https://github.com/WhiteDevilMan/BookingService',
     liveDemo: 'https://whitedevilman.github.io/BookingService/',
   },
@@ -47,6 +61,7 @@ export const projects: TProjects[] = [
     skills: 'Pug, SCSS, JavaScript, jQuery',
     img: project07,
     bigImg: project07Big,
+    background: 'rgb(255, 235, 59)',
     gitHubLink: 'https://github.com/WhiteDevilMan/LuxRest',
     liveDemo: 'https://whitedevilman.github.io/LuxRest/',
   },
@@ -55,6 +70,7 @@ export const projects: TProjects[] = [
     skills: 'React, Node.js, MongoDB',
     img: project01,
     bigImg: project01Big,
+    background: '#370037',
     gitHubLink: 'http://github.com',
     liveDemo: 'https://whitedevilman.github.io',
   },
@@ -63,6 +79,7 @@ export const projects: TProjects[] = [
     skills: 'React, PHP, MySQL',
     img: project02,
     bigImg: project02Big,
+    background: '#370037',
     gitHubLink: 'http://github.com',
     liveDemo: 'https://whitedevilman.github.io',
   },
@@ -71,6 +88,7 @@ export const projects: TProjects[] = [
     skills: 'VueJS, Node.js, MongoDB',
     img: project03,
     bigImg: project03Big,
+    background: '#370037',
     gitHubLink: 'http://github.com',
     liveDemo: 'https://whitedevilman.github.io',
   },
@@ -79,6 +97,7 @@ export const projects: TProjects[] = [
     skills: 'React Native',
     img: project04,
     bigImg: project04Big,
+    background: '#370037',
     gitHubLink: 'http://github.com',
     liveDemo: 'https://whitedevilman.github.io',
   },
@@ -87,6 +106,7 @@ export const projects: TProjects[] = [
     skills: 'React, PHP, MySQL',
     img: project06,
     bigImg: project06Big,
+    background: '#370037',
     gitHubLink: 'http://github.com',
     liveDemo: 'https://whitedevilman.github.io',
   },
