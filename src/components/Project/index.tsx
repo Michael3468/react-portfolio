@@ -16,9 +16,17 @@ const Project: FC<Props> = ({ title, img, index, background }) => (
     className="project pulse-animation"
     style={!img ? { display: 'flex', alignItems: 'center' } : {}}
   >
-    <NavLink to={`/project/${index}`}>
+    <NavLink to={`/project/${index}`} style={{ width: 'inherit', maxWidth: 'inherit' }}>
       {img && (
-        <div style={{ padding: 20, background, borderRadius: 10 }}>
+        <div
+          style={{
+            padding: 20,
+            background,
+            borderRadius: 10,
+            width: 'inherit',
+            maxWidth: 'inherit',
+          }}
+        >
           <img src={img} alt={title} className="project__img" />
         </div>
       )}
