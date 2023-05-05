@@ -16,6 +16,8 @@ import project09Big from '../assets/img/projects/09-big.png';
 import project09 from '../assets/img/projects/09.png';
 import project10Big from '../assets/img/projects/10-big.png';
 import project10 from '../assets/img/projects/10.png';
+import project11Big from '../assets/img/projects/11-big.png';
+import project11 from '../assets/img/projects/11.png';
 
 type TProjects = {
   title: string;
@@ -30,8 +32,17 @@ type TProjects = {
 // eslint-disable-next-line import/prefer-default-export
 export const projects: TProjects[] = [
   {
+    title: 'Blog',
+    skills: 'MongoDB, ExpressJS, React, Node.js, Mongoose, Axios',
+    img: project11,
+    bigImg: project11Big,
+    background: 'rgb(76, 230, 7)',
+    gitHubLink: 'https://github.com/WhiteDevilMan/mern-blog',
+    liveDemo: 'https://mern-blog-fipk.onrender.com/',
+  },
+  {
     title: 'Social',
-    skills: 'Next.js TailwindCSS, Firebase',
+    skills: 'Next.js, Next-Auth, Emoji-Mart, TailwindCSS, TypeScript, RecoilJS, Firebase',
     img: project10,
     bigImg: project10Big,
     background: 'rgb(98, 0, 153)',
@@ -43,7 +54,7 @@ export const projects: TProjects[] = [
     skills: 'Pug, SCSS, jQuery, TypeScript, Jest, MVP, Webpack',
     img: project09,
     bigImg: project09Big,
-    background: 'rgb(108, 108, 255)',
+    background: 'rgb(54, 54, 255)',
     gitHubLink: 'https://github.com/WhiteDevilMan/RangeSlider',
     liveDemo: 'https://whitedevilman.github.io/RangeSlider/',
   },
@@ -52,7 +63,7 @@ export const projects: TProjects[] = [
     skills: 'Pug, SCSS, JavaScript, Webpack',
     img: project08,
     bigImg: project08Big,
-    background: 'rgb(64, 255, 149)',
+    background: 'rgb(0, 255, 113)',
     gitHubLink: 'https://github.com/WhiteDevilMan/BookingService',
     liveDemo: 'https://whitedevilman.github.io/BookingService/',
   },
@@ -61,7 +72,7 @@ export const projects: TProjects[] = [
     skills: 'Pug, SCSS, JavaScript, jQuery',
     img: project07,
     bigImg: project07Big,
-    background: 'rgb(255, 235, 59)',
+    background: 'rgb(242, 219, 16)',
     gitHubLink: 'https://github.com/WhiteDevilMan/LuxRest',
     liveDemo: 'https://whitedevilman.github.io/LuxRest/',
   },
