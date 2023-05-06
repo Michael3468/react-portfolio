@@ -89,6 +89,7 @@
         "namedComponents": "arrow-function"
       }
     ],
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "import/no-relative-packages": "off"
   }
 }
