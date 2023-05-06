@@ -1,0 +1,3 @@
+[submodule "src/stories"]
+	path = src/stories
+	url = https://github.com/WhiteDevilMan/storybook.git
