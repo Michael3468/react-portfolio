@@ -159,11 +159,33 @@ body {
   text-align: center;
 }
 
+.project-details__container {
+  margin-bottom: 40px;
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0;
+  height: 0px;
+}
+
+.project-details__container.project-details__container__loaded {
+  padding: 20px;
+  opacity: 1;
+  height: 100%;
+  transition: all 3s ease-in-out;
+}
+
 .project-details__cover {
   max-width: 100%;
 
   box-shadow: var(--box-shadow);
   border-radius: 10px;
+  width: 100%;
+  opacity: 0;
+}
+
+.project-details__cover.project-details__cover_loaded {
+  opacity: 1;
+  transition: all 5s ease-in-out;
 }
 
 .project-details__desc {
