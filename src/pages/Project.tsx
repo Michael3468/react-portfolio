@@ -25,6 +25,10 @@ const Project = () => {
             {project.title}
           </h1>
 
+          <div className="project-details__desc text-shadow">
+            <p>{`Skills: ${project.skills}`}</p>
+          </div>
+
           <div
             className={`project-details__container ${
               imgLoaded ? 'project-details__container__loaded' : ''
@@ -41,10 +45,6 @@ const Project = () => {
               }`}
               onLoad={handleImgLoaded}
             />
-          </div>
-
-          <div className="project-details__desc text-shadow">
-            <p>{`Skills: ${project.skills}`}</p>
           </div>
 
           <div>
