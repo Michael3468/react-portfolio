@@ -1,6 +1,6 @@
 # React Portfolio
 
-After cloning this repository and installing dependencies, run:
+After cloning this repository and installing dependencies, in the root folder of this app run:
 
 ```
 git submodule update --init --recursive
