@@ -6,6 +6,8 @@ After cloning this repository and installing dependencies, in the root folder of
 git submodule update --init --recursive
 ```
 
+this command would install storybook components as submodule in **`src/stories`** folder
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
