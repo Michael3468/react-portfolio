@@ -64,3 +64,10 @@
   width: 100%;
   background-color: var(--accent);
 }
+
+@media (max-width: 531px) {
+  .nav-list {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
