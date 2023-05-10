@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './styles.css';
@@ -11,28 +11,41 @@ type Props = {
   background: string;
 };
 
-const Project: FC<Props> = ({ title, img, index, background }) => (
-  <li
-    className="project pulse-animation"
-    style={!img ? { display: 'flex', alignItems: 'center' } : {}}
-  >
-    <NavLink to={`/project/${index}`} style={{ width: 'inherit', maxWidth: 'inherit' }}>
-      {img && (
-        <div
-          style={{
-            padding: 20,
-            background,
-            borderRadius: 10,
-            width: 'inherit',
-            maxWidth: 'inherit',
-          }}
-        >
-          <img src={img} alt={title} className="project__img" />
-        </div>
-      )}
-      <h3 className="project__title">{title}</h3>
-    </NavLink>
-  </li>
-);
+const Project: FC<Props> = ({ title, img, index, background }) => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
+  const handleImgLoaded = () => {
+    setImgLoaded(true);
+  };
+
+  return (
+    <li
+      className="project pulse-animation"
+      style={!img ? { display: 'flex', alignItems: 'center' } : {}}
+    >
+      <NavLink to={`/project/${index}`} style={{ width: 'inherit', maxWidth: 'inherit' }}>
+        {img && (
+          <div
+            style={{
+              padding: 20,
+              background,
+              borderRadius: 10,
+              width: 'inherit',
+              maxWidth: 'inherit',
+            }}
+          >
+            <img
+              src={img}
+              alt={title}
+              className={`project__img ${imgLoaded ? 'project__img_loaded' : ''}`}
+              onLoad={handleImgLoaded}
+            />
+          </div>
+        )}
+        <h3 className="project__title">{title}</h3>
+      </NavLink>
+    </li>
+  );
+};
 
 export default Project;
