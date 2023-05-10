@@ -1,12 +1,12 @@
 # React Portfolio
 
-After cloning this repository and installing dependencies, in the root folder of this app run:
+After cloning this repository and installing dependencies, navigate to the root folder of the application and run the following command in the terminal:
 
 ```
 git submodule update --init --recursive
 ```
 
-this command would install storybook components as submodule in **`src/stories`** folder
+By running this command, the storybook components will be installed as a submodule in the **`src/stories`** folder.
 
 # Getting Started with Create React App
 
