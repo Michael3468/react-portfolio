@@ -27,7 +27,7 @@ const Project: FC<Props> = ({ title, img, index, background }) => {
         {img && (
           <div
             style={{
-              padding: 20,
+              padding: 15,
               background,
               borderRadius: 10,
               width: 'inherit',
