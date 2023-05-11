@@ -16,7 +16,7 @@
 }
 
 .project__img.project__img_loaded {
-  height: 278px;
+  height: auto;
   opacity: 1;
   transition: all 1s ease-in-out;
 }
