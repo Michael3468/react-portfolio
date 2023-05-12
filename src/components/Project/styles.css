@@ -10,6 +10,15 @@
 
 .project__img {
   border-radius: 10px;
+  height: 0px;
+  width: 100%;
+  opacity: 0;
+}
+
+.project__img.project__img_loaded {
+  height: auto;
+  opacity: 1;
+  transition: all 1s ease-in-out;
 }
 
 .project__title {

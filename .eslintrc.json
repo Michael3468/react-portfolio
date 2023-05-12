@@ -90,6 +90,19 @@
       }
     ],
     "react/react-in-jsx-scope": "off",
-    "import/no-relative-packages": "off"
-  }
+    "import/no-relative-packages": "off",
+
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": true
+    }]
+  },
+
+  "overrides": [
+    {
+      "files": ["src/stories/**"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
 }

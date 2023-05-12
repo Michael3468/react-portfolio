@@ -5,10 +5,7 @@
   /* Colors */
   --blackpure: #000;
   --black: #171718;
-  --gray: #4f4f4f;
   --black-border: #26292d;
-  --white: #fff;
-  --purple: #5c62ec;
 
   /* Nav */
   --nav-bg: var(--black);
@@ -22,17 +19,6 @@
   /* Footer */
   --footer-bg: var(--black);
   --footer-text: var(--white);
-
-  /* Light mode */
-  --page-bg: var(--white);
-  --text-color: var(--black);
-  --text-shadow: var(--gray);
-  --accent: var(--purple);
-  --title-1: var(--accent);
-
-  --project-card-bg: var(--white);
-  --project-card-text: var(--black);
-  --box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
 }
 
 #root {
@@ -43,19 +29,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.dark {
-  /* Dark mode */
-  --page-bg: #252526;
-  --text-color: var(--white);
-  --text-shadow: var(--blackpure);
-
-  --title-1: var(--white);
-
-  --project-card-bg: var(--black);
-  --project-card-text: var(--white);
-  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
 }
 
 html,
@@ -89,7 +62,7 @@ body {
 }
 
 .title-1 {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 
   font-size: 42px;
   font-weight: 700;
@@ -111,14 +84,14 @@ body {
 }
 
 /* Btn */
-
+/* TODO: remove btn (cv button) */
 .btn {
   display: inline-block;
   height: 48px;
   padding: 12px 28px;
 
   border-radius: 5px;
-  background-color: var(--accent);
+  background-color: var(--purple);
   color: var(--white);
   letter-spacing: 0.15px;
   font-size: 16px;
@@ -159,11 +132,33 @@ body {
   text-align: center;
 }
 
+.project-details__container {
+  margin-bottom: 40px;
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0;
+  height: 0px;
+}
+
+.project-details__container.project-details__container__loaded {
+  padding: 20px;
+  opacity: 1;
+  height: 100%;
+  transition: all 3s ease-in-out;
+}
+
 .project-details__cover {
   max-width: 100%;
 
   box-shadow: var(--box-shadow);
   border-radius: 10px;
+  width: 100%;
+  opacity: 0;
+}
+
+.project-details__cover.project-details__cover_loaded {
+  opacity: 1;
+  transition: all 5s ease-in-out;
 }
 
 .project-details__desc {
@@ -187,7 +182,7 @@ body {
 }
 
 .content-list a {
-  color: var(--accent);
+  color: var(--purple);
 }
 
 .content-list__item {

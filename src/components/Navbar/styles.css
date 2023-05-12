@@ -62,5 +62,12 @@
   display: block;
   height: 2px;
   width: 100%;
-  background-color: var(--accent);
+  background-color: var(--purple);
+}
+
+@media (max-width: 531px) {
+  .nav-list {
+    width: 100%;
+    justify-content: space-between;
+  }
 }

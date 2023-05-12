@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { styles } from '../assets/constants';
@@ -8,8 +9,13 @@ import ButtonIconWithLink from '../stories/components/Buttons/ButtonIconWithLink
 
 const Project = () => {
   const { id } = useParams();
+  const [imgLoaded, setImgLoaded] = useState(false);
   const project = projects[Number(id)];
   const buttonGradient = 'linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0.5))';
+
+  const handleImgLoaded = () => {
+    setImgLoaded(true);
+  };
 
   return (
     <main className="section">
@@ -19,19 +25,26 @@ const Project = () => {
             {project.title}
           </h1>
 
-          <div
-            style={{
-              padding: 20,
-              marginBottom: 40,
-              background: `${project.background}`,
-              borderRadius: 10,
-            }}
-          >
-            <img src={project.bigImg} alt={project.title} className="project-details__cover" />
-          </div>
-
           <div className="project-details__desc text-shadow">
             <p>{`Skills: ${project.skills}`}</p>
+          </div>
+
+          <div
+            className={`project-details__container ${
+              imgLoaded ? 'project-details__container__loaded' : ''
+            }`}
+            style={{
+              background: `${project.background}`,
+            }}
+          >
+            <img
+              src={project.bigImg}
+              alt={project.title}
+              className={`project-details__cover ${
+                imgLoaded ? 'project-details__cover_loaded' : ''
+              }`}
+              onLoad={handleImgLoaded}
+            />
           </div>
 
           <div>
