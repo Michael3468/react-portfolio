@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import { styles } from '../../assets/constants';
-import BtnDarkMode from '../BtnDarkMode';
+import ButtonToggleDarkMode from '../../stories/components/Buttons/ButtonToggleDarkMode';
 
 import './styles.css';
 
@@ -17,7 +17,7 @@ const Navbar = () => {
             <strong style={{ textShadow: `${styles.mainTheme.textShadow}` }}>Portfolio</strong>
           </NavLink>
 
-          <BtnDarkMode />
+          <ButtonToggleDarkMode />
 
           <ul className="nav-list">
             <li className="nav-list__item">
