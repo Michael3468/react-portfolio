@@ -22,7 +22,7 @@ const Contacts = () => (
           <h2 className="title-2 text-shadow">Email</h2>
           <p>
             <a href="mailto:mikhail3468@yandex.ru" className="text-shadow">
-              mikhail3468@yandex.ru
+              Click to send message
             </a>
           </p>
         </li>
