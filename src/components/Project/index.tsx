@@ -26,12 +26,9 @@ const Project: FC<Props> = ({ title, img, index, background }) => {
       <NavLink to={`/project/${index}`} style={{ width: 'inherit', maxWidth: 'inherit' }}>
         {img && (
           <div
+            className="project__container"
             style={{
-              padding: 15,
               background,
-              borderRadius: 10,
-              width: 'inherit',
-              maxWidth: 'inherit',
             }}
           >
             <img
