@@ -8,11 +8,20 @@
   border-radius: 10px;
 }
 
+.project__container {
+  padding: 15px;
+  border-radius: 10px;
+  width: inherit;
+  max-width: inherit;
+  box-shadow: 0 0 6px 3px black inset;
+}
+
 .project__img {
   border-radius: 10px;
   height: 0px;
   width: 100%;
   opacity: 0;
+  box-shadow: 0px 0 2px 2px black;
 }
 
 .project__img.project__img_loaded {
