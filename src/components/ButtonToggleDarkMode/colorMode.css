@@ -1,0 +1,30 @@
+:root {
+  --white: #fff;
+  --gray: #4f4f4f;
+  --purple: #5c62ec;
+  --black-pure: #000;
+
+  /* Light mode */
+  --page-bg: var(--white);
+  --text-color: var(--black-pure);
+  --text-shadow: var(--gray);
+  --accent: var(--purple);
+  --title-1: var(--purple);
+
+  --project-card-bg: var(--white);
+  --project-card-text: var(--black-pure);
+  --box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+}
+
+.dark {
+  /* Dark mode */
+  --page-bg: #252526;
+  --text-color: var(--white);
+  --text-shadow: var(--black-pure);
+
+  --title-1: var(--white);
+
+  --project-card-bg: var(--black-pure);
+  --project-card-text: var(--white);
+  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
+}

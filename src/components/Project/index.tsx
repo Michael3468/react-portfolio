@@ -1,5 +1,8 @@
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+
+import { darkModeState } from '../../atoms/darkModeState';
 
 import './styles.css';
 import '../../stories/assets/css/animations/pulse-animation.css';
@@ -12,19 +15,28 @@ type Props = {
 };
 
 const Project: FC<Props> = ({ title, img, index, background }) => {
+  const DEFAULT_SHADOW_COLOR = 'black';
+
   const [imgLoaded, setImgLoaded] = useState(false);
+  const [backgroundColor, setBackgroundColor] = useState<string>(DEFAULT_SHADOW_COLOR);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [darkModeLocalStorageValue, _] = useRecoilState(darkModeState);
 
   const handleImgLoaded = () => {
     setImgLoaded(true);
   };
+
+  useEffect(() => {
+    setBackgroundColor(darkModeLocalStorageValue === 'dark' ? background : DEFAULT_SHADOW_COLOR);
+  }, [background, darkModeLocalStorageValue]);
 
   return (
     <li
       className="project pulse-animation"
       style={
         !img
-          ? { display: 'flex', alignItems: 'center', boxShadow: `0 0 11px ${background}` }
-          : { boxShadow: `0 0 11px ${background}` }
+          ? { display: 'flex', alignItems: 'center', boxShadow: `0 0 11px ${backgroundColor}` }
+          : { boxShadow: `0 0 11px ${backgroundColor}` }
       }
     >
       <NavLink to={`/project/${index}`} style={{ width: 'inherit', maxWidth: 'inherit' }}>

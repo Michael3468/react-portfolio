@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import { styles } from '../../assets/constants';
-import ButtonToggleDarkMode from '../../stories/components/Buttons/ButtonToggleDarkMode';
+import ButtonToggleDarkMode from '../ButtonToggleDarkMode';
 
 import './styles.css';
 
