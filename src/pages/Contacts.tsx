@@ -9,7 +9,6 @@ const Contacts = () => {
     <main className="section">
       <div className="container">
         <h1 className="title-1" style={{ textShadow: `${styles.mainTheme.textShadow}` }}>
-          {/* Contacts */}
           {contactsString.map((letter, index) => (
             <AnimationScale3d key={index}>{letter === ' ' ? '\u00A0' : letter}</AnimationScale3d>
           ))}

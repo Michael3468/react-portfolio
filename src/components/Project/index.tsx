@@ -21,7 +21,11 @@ const Project: FC<Props> = ({ title, img, index, background }) => {
   return (
     <li
       className="project pulse-animation"
-      style={!img ? { display: 'flex', alignItems: 'center' } : {}}
+      style={
+        !img
+          ? { display: 'flex', alignItems: 'center', boxShadow: `0 0 11px ${background}` }
+          : { boxShadow: `0 0 11px ${background}` }
+      }
     >
       <NavLink to={`/project/${index}`} style={{ width: 'inherit', maxWidth: 'inherit' }}>
         {img && (

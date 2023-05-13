@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { styles } from '../assets/constants';
-import { projects } from '../helpers/projectsList';
-import gitHubIcon from '../stories/assets/images/icons/gitHub-black.svg';
-import liveDemo from '../stories/assets/images/icons/live-demo-icon.svg';
-import ButtonIconWithLink from '../stories/components/Buttons/ButtonIconWithLink';
+import { styles } from '../../assets/constants';
+import { projects } from '../../helpers/projectsList';
+import gitHubIcon from '../../stories/assets/images/icons/gitHub-black.svg';
+import liveDemo from '../../stories/assets/images/icons/live-demo-icon.svg';
+import ButtonIconWithLink from '../../stories/components/Buttons/ButtonIconWithLink';
+
+import './styles.css';
 
 const Project = () => {
   const { id } = useParams();

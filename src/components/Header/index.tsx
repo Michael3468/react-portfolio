@@ -40,10 +40,6 @@ const Header = () => {
             style={{ textShadow: `${styles.mainTheme.textShadow}` }}
           />
         </div>
-
-        {/* <a href="#!" className="btn">
-        Download CV
-      </a> */}
       </div>
     </header>
   );
