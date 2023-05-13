@@ -1,0 +1,45 @@
+@import './colorMode.css';
+
+.dark-mode-btn {
+  box-sizing: border-box;
+  cursor: pointer;
+  order: 9;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 51px;
+  height: 26px;
+  border: 1px solid black;
+
+  border-radius: 50px;
+  background-color: #272727;
+}
+
+.dark-mode-btn::before {
+  content: '';
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  background-color: #fff;
+
+  transition: left 0.2s ease-in;
+}
+
+.dark-mode-btn--active::before {
+  left: 25px;
+}
+
+.dark-mode-btn__icon {
+  position: relative;
+  z-index: 9;
+  margin: 5px;
+}
