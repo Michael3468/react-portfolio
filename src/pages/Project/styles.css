@@ -1,0 +1,63 @@
+/* TODO: add stylelint */
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.project-details {
+  margin: 0 auto;
+  max-width: 865px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.project-details__container {
+  margin-bottom: 40px;
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0;
+  height: 0px;
+}
+
+.project-details__container.project-details__container__loaded {
+  padding: 20px;
+  opacity: 1;
+  height: 100%;
+  transition: all 3s ease-in-out;
+}
+
+.project-details__cover {
+  max-width: 100%;
+
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0;
+}
+
+.project-details__cover.project-details__cover_loaded {
+  opacity: 1;
+  transition: all 5s ease-in-out;
+}
+
+.project-details__desc {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+@media (max-width: 620px) {
+  .project-details__desc {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}
