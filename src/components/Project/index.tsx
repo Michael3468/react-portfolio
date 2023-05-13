@@ -18,7 +18,8 @@ const Project: FC<Props> = ({ title, img, index, background }) => {
   const DEFAULT_SHADOW_COLOR = 'black';
 
   const [imgLoaded, setImgLoaded] = useState(false);
-  const [backgroundColor, setBackgroundColor] = useState<string>(DEFAULT_SHADOW_COLOR);
+  const [projectShadowColor, setProjectShadowColor] = useState<string>(DEFAULT_SHADOW_COLOR);
+  const [innerShadow, setInnerShadow] = useState<string>(DEFAULT_SHADOW_COLOR);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [darkModeLocalStorageValue, _] = useRecoilState(darkModeState);
 
@@ -27,7 +28,8 @@ const Project: FC<Props> = ({ title, img, index, background }) => {
   };
 
   useEffect(() => {
-    setBackgroundColor(darkModeLocalStorageValue === 'dark' ? background : DEFAULT_SHADOW_COLOR);
+    setProjectShadowColor(darkModeLocalStorageValue === 'dark' ? background : DEFAULT_SHADOW_COLOR);
+    setInnerShadow(darkModeLocalStorageValue === 'dark' ? '#505050' : DEFAULT_SHADOW_COLOR);
   }, [background, darkModeLocalStorageValue]);
 
   return (
@@ -35,11 +37,19 @@ const Project: FC<Props> = ({ title, img, index, background }) => {
       className="project pulse-animation"
       style={
         !img
-          ? { display: 'flex', alignItems: 'center', boxShadow: `0 0 11px ${backgroundColor}` }
-          : { boxShadow: `0 0 11px ${backgroundColor}` }
+          ? { display: 'flex', alignItems: 'center', boxShadow: `0 0 11px ${projectShadowColor}` }
+          : { boxShadow: `0 0 11px ${projectShadowColor}` }
       }
     >
-      <NavLink to={`/project/${index}`} style={{ width: 'inherit', maxWidth: 'inherit' }}>
+      <NavLink
+        to={`/project/${index}`}
+        style={{
+          width: 'inherit',
+          maxWidth: 'inherit',
+          borderRadius: 'inherit',
+          boxShadow: `0 0 10px ${innerShadow} inset`,
+        }}
+      >
         {img && (
           <div
             className="project__container"
