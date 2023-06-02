@@ -37,8 +37,16 @@ const Project: FC<Props> = ({ title, img, index, background }) => {
       className="project pulse-animation"
       style={
         !img
-          ? { display: 'flex', alignItems: 'center', boxShadow: `0 0 11px ${projectShadowColor}` }
-          : { boxShadow: `0 0 11px ${projectShadowColor}` }
+          ? {
+              display: 'flex',
+              alignItems: 'center',
+              boxShadow: `0 0 11px ${projectShadowColor}`,
+              background: `${darkModeLocalStorageValue === 'dark' ? '' : background}`,
+            }
+          : {
+              boxShadow: `0 0 11px ${projectShadowColor}`,
+              background: `${darkModeLocalStorageValue === 'dark' ? '' : background}`,
+            }
       }
     >
       <NavLink
