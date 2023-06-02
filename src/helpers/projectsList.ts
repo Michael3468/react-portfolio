@@ -8,6 +8,8 @@ import project04Big from '../assets/img/projects/04-big.png';
 import project04 from '../assets/img/projects/04.png';
 import project05Big from '../assets/img/projects/05-big.png';
 import project05 from '../assets/img/projects/05.png';
+import project06Big from '../assets/img/projects/06-big.png';
+import project06 from '../assets/img/projects/06.png';
 
 type TProjects = {
   title: string;
@@ -21,6 +23,15 @@ type TProjects = {
 
 // eslint-disable-next-line import/prefer-default-export
 export const projects: TProjects[] = [
+  {
+    title: 'React Landing',
+    skills: 'React, TailwindCSS, Vite',
+    img: project06,
+    bigImg: project06Big,
+    background: 'rgb(0, 219, 255)',
+    gitHubLink: 'https://github.com/WhiteDevilMan/bank-modern',
+    liveDemo: 'https://bank-modern-rhccoder.vercel.app/',
+  },
   {
     title: 'Blog',
     skills: 'MongoDB, ExpressJS, React, Node.js, Mongoose, Axios',
