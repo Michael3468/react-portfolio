@@ -41,11 +41,9 @@ const Project: FC<Props> = ({ title, img, index, background }) => {
               display: 'flex',
               alignItems: 'center',
               boxShadow: `0 0 11px ${projectShadowColor}`,
-              background: `${darkModeLocalStorageValue === 'dark' ? '' : background}`,
             }
           : {
               boxShadow: `0 0 11px ${projectShadowColor}`,
-              background: `${darkModeLocalStorageValue === 'dark' ? '' : background}`,
             }
       }
     >
