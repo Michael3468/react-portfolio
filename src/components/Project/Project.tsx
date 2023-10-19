@@ -10,11 +10,11 @@ import '../../stories/assets/css/animations/pulse-animation.css';
 type Props = {
   title: string;
   img: string;
-  index: number;
+  id: number;
   background: string;
 };
 
-const Project: FC<Props> = ({ title, img, index, background }) => {
+const Project: FC<Props> = ({ title, img, id, background }) => {
   const DEFAULT_SHADOW_COLOR = 'black';
 
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -48,7 +48,7 @@ const Project: FC<Props> = ({ title, img, index, background }) => {
       }
     >
       <NavLink
-        to={`/project/${index}`}
+        to={`/project/${id}`}
         style={{
           width: 'inherit',
           maxWidth: 'inherit',

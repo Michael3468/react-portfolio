@@ -1,80 +1,78 @@
-import project01Big from '../assets/img/projects/01-big.png';
-import project01 from '../assets/img/projects/01.png';
-import project02Big from '../assets/img/projects/02-big.png';
-import project02 from '../assets/img/projects/02.png';
-import project03Big from '../assets/img/projects/03-big.png';
-import project03 from '../assets/img/projects/03.png';
-import project04Big from '../assets/img/projects/04-big.png';
-import project04 from '../assets/img/projects/04.png';
-import project05Big from '../assets/img/projects/05-big.png';
-import project05 from '../assets/img/projects/05.png';
-import project06Big from '../assets/img/projects/06-big.png';
-import project06 from '../assets/img/projects/06.png';
+import project10Big from '../assets/img/projects/10-big.jpg';
+import project10 from '../assets/img/projects/10.jpg';
+import project11Big from '../assets/img/projects/11-big.jpg';
+import project11 from '../assets/img/projects/11.jpg';
+import project12Big from '../assets/img/projects/12-big.jpg';
+import project12 from '../assets/img/projects/12.jpg';
+import project13Big from '../assets/img/projects/13-big.jpg';
+import project13 from '../assets/img/projects/13.jpg';
+import project14Big from '../assets/img/projects/14-big.jpg';
+import project14 from '../assets/img/projects/14.jpg';
+import project15Big from '../assets/img/projects/15-big.jpg';
+import project15 from '../assets/img/projects/15.jpg';
+import { TProjects } from '../types';
 
-type TProjects = {
-  title: string;
-  skills: string;
-  img: string;
-  bigImg: string;
-  background: string;
-  gitHubLink: string;
-  liveDemo: string;
-};
-
-// eslint-disable-next-line import/prefer-default-export
-export const projects: TProjects[] = [
+const projectsList: TProjects[] = [
   {
+    id: 15,
     title: 'React Landing',
     skills: 'React, TailwindCSS, Vite',
-    img: project06,
-    bigImg: project06Big,
+    img: project15,
+    bigImg: project15Big,
     background: 'rgb(0, 219, 255)',
     gitHubLink: 'https://github.com/WhiteDevilMan/bank-modern',
     liveDemo: 'https://bank-modern-rhccoder.vercel.app/',
   },
   {
+    id: 14,
     title: 'Blog',
     skills: 'MongoDB, ExpressJS, React, Node.js, Mongoose, Axios',
-    img: project05,
-    bigImg: project05Big,
+    img: project14,
+    bigImg: project14Big,
     background: 'rgb(76, 230, 7)',
     gitHubLink: 'https://github.com/WhiteDevilMan/mern-blog',
     liveDemo: 'https://mern-blog-fipk.onrender.com/',
   },
   {
+    id: 13,
     title: 'Social',
     skills: 'Next.js, Next-Auth, Emoji-Mart, TailwindCSS, TypeScript, RecoilJS, Firebase',
-    img: project04,
-    bigImg: project04Big,
+    img: project13,
+    bigImg: project13Big,
     background: 'rgb(98, 0, 153)',
     gitHubLink: 'https://github.com/WhiteDevilMan/twitter-clone',
     liveDemo: 'https://twitter-clone-rhccoder.vercel.app/',
   },
   {
+    id: 12,
     title: 'jQuery plugin',
     skills: 'Pug, SCSS, jQuery, TypeScript, Jest, MVP, Webpack',
-    img: project03,
-    bigImg: project03Big,
+    img: project12,
+    bigImg: project12Big,
     background: 'rgb(54, 54, 255)',
     gitHubLink: 'https://github.com/WhiteDevilMan/RangeSlider',
     liveDemo: 'https://whitedevilman.github.io/RangeSlider/',
   },
   {
+    id: 11,
     title: 'Booking Service',
     skills: 'Pug, SCSS, JavaScript, Webpack',
-    img: project02,
-    bigImg: project02Big,
-    background: 'rgb(0, 255, 113)',
+    img: project11,
+    bigImg: project11Big,
+    background: 'rgb(0, 255, 143)',
     gitHubLink: 'https://github.com/WhiteDevilMan/BookingService',
     liveDemo: 'https://whitedevilman.github.io/BookingService/',
   },
   {
+    id: 10,
     title: 'Landing',
     skills: 'Pug, SCSS, JavaScript, jQuery',
-    img: project01,
-    bigImg: project01Big,
+    img: project10,
+    bigImg: project10Big,
     background: 'rgb(242, 219, 16)',
     gitHubLink: 'https://github.com/WhiteDevilMan/LuxRest',
     liveDemo: 'https://whitedevilman.github.io/LuxRest/',
   },
 ];
+
+export default projectsList;

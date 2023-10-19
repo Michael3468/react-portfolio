@@ -1,12 +1,4 @@
 /* TODO: add stylelint */
-.projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 30px;
-}
-
 .project-details {
   margin: 0 auto;
   max-width: 865px;
