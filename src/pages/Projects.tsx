@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import { styles } from '../assets/constants';
 import Project from '../components/Project';
-import { projects } from '../helpers/projectsList';
+import { projectsList } from '../shared/constants';
 import AnimationScale3d from '../stories/components/Animations/AnimationScale3d';
 
 const Projects = () => {
@@ -17,12 +17,12 @@ const Projects = () => {
         </h2>
 
         <ul className="projects">
-          {projects.map((project, index) => (
+          {projectsList.map((project) => (
             <Project
               key={project.title}
               title={project.title}
               img={project.img}
-              index={index}
+              id={project.id}
               background={project.background}
             />
           ))}

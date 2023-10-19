@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { styles } from '../../assets/constants';
-import { projects } from '../../helpers/projectsList';
+import { projectsList } from '../../shared/constants';
 import gitHubIcon from '../../stories/assets/images/icons/gitHub-black.svg';
 import liveDemo from '../../stories/assets/images/icons/live-demo-icon.svg';
 import ButtonIconWithLink from '../../stories/components/Buttons/ButtonIconWithLink';
@@ -12,7 +12,7 @@ import './styles.css';
 const Project = () => {
   const { id } = useParams();
   const [imgLoaded, setImgLoaded] = useState(false);
-  const project = projects[Number(id)];
+  const project = projectsList.filter((p) => p.id === Number(id))[0];
   const buttonGradient = 'linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0.5))';
 
   const handleImgLoaded = () => {
