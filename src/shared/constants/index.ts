@@ -1,4 +1,4 @@
 import projectsList from './projectsList';
+import testTasksList from './testTasksList';
 
-// eslint-disable-next-line import/prefer-default-export
-export { projectsList };
+export { projectsList, testTasksList };

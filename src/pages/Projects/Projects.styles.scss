@@ -1,0 +1,12 @@
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+
+  &__block-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
