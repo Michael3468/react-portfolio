@@ -20,7 +20,7 @@ const projectsList: TProjects[] = [
     img: project15,
     bigImg: project15Big,
     background: 'rgb(0, 219, 255)',
-    gitHubLink: 'https://github.com/WhiteDevilMan/bank-modern',
+    gitHubLink: 'https://github.com/Michael3468/bank-modern',
     liveDemo: 'https://bank-modern-rhccoder.vercel.app/',
   },
   {
@@ -30,7 +30,7 @@ const projectsList: TProjects[] = [
     img: project14,
     bigImg: project14Big,
     background: 'rgb(76, 230, 7)',
-    gitHubLink: 'https://github.com/WhiteDevilMan/mern-blog',
+    gitHubLink: 'https://github.com/Michael3468/mern-blog',
     liveDemo: 'https://mern-blog-fipk.onrender.com/',
   },
   {
@@ -40,7 +40,7 @@ const projectsList: TProjects[] = [
     img: project13,
     bigImg: project13Big,
     background: 'rgb(98, 0, 153)',
-    gitHubLink: 'https://github.com/WhiteDevilMan/twitter-clone',
+    gitHubLink: 'https://github.com/Michael3468/twitter-clone',
     liveDemo: 'https://twitter-clone-rhccoder.vercel.app/',
   },
   {
@@ -50,8 +50,8 @@ const projectsList: TProjects[] = [
     img: project12,
     bigImg: project12Big,
     background: 'rgb(54, 54, 255)',
-    gitHubLink: 'https://github.com/WhiteDevilMan/RangeSlider',
-    liveDemo: 'https://whitedevilman.github.io/RangeSlider/',
+    gitHubLink: 'https://github.com/Michael3468/RangeSlider',
+    liveDemo: 'https://Michael3468.github.io/RangeSlider/',
   },
   {
     id: 11,
@@ -60,8 +60,8 @@ const projectsList: TProjects[] = [
     img: project11,
     bigImg: project11Big,
     background: 'rgb(0, 255, 143)',
-    gitHubLink: 'https://github.com/WhiteDevilMan/BookingService',
-    liveDemo: 'https://whitedevilman.github.io/BookingService/',
+    gitHubLink: 'https://github.com/Michael3468/BookingService',
+    liveDemo: 'https://Michael3468.github.io/BookingService/',
   },
   {
     id: 10,
@@ -70,8 +70,8 @@ const projectsList: TProjects[] = [
     img: project10,
     bigImg: project10Big,
     background: 'rgb(242, 219, 16)',
-    gitHubLink: 'https://github.com/WhiteDevilMan/LuxRest',
-    liveDemo: 'https://whitedevilman.github.io/LuxRest/',
+    gitHubLink: 'https://github.com/Michael3468/LuxRest',
+    liveDemo: 'https://Michael3468.github.io/LuxRest/',
   },
 ];
 
