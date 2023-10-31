@@ -69,7 +69,7 @@ const projectsList: TProjects[] = [
     skills: 'Pug, SCSS, JavaScript, jQuery',
     img: project10,
     bigImg: project10Big,
-    background: 'rgb(242, 219, 16)',
+    background: 'rgb(236, 213, 13)',
     gitHubLink: 'https://github.com/Michael3468/LuxRest',
     liveDemo: 'https://Michael3468.github.io/LuxRest/',
   },
