@@ -2,6 +2,8 @@ import project21Big from '../assets/img/testProjects/21-big.jpg';
 import project21 from '../assets/img/testProjects/21.jpg';
 import project22Big from '../assets/img/testProjects/22-big.jpg';
 import project22 from '../assets/img/testProjects/22.jpg';
+import project23Big from '../assets/img/testProjects/23-big.jpg';
+import project23 from '../assets/img/testProjects/23.jpg';
 import project29Big from '../assets/img/testProjects/29-big.jpg';
 import project29 from '../assets/img/testProjects/29.jpg';
 import { TProjects } from '../types';
@@ -16,6 +18,16 @@ const testTasksList: TProjects[] = [
     background: 'rgb(255, 178, 32)',
     gitHubLink: 'https://github.com/Michael3468/astrum-entertainment-test',
     liveDemo: 'https://astrum-entertainment-test.vercel.app/',
+  },
+  {
+    id: 23,
+    title: 'React Saga TODO',
+    skills: 'React, Typescript, Saga, Vite',
+    img: project23,
+    bigImg: project23Big,
+    background: 'rgb(187, 7, 167)',
+    gitHubLink: 'https://github.com/Michael3468/react-test-task',
+    liveDemo: 'https://react-test-task-rhccoder.vercel.app/',
   },
   {
     id: 22,
