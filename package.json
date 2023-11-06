@@ -24,13 +24,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cm": "cz",
     "release-same-version": "git flow release start next && git flow release finish -n next",
     "release-minor": "git flow release start next && npm version minor && git flow release finish -n next",
     "release-patch": "git flow release start next && npm version patch && git flow release finish -n next",
     "push": "git checkout master && git push && git checkout develop && git push",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "stylelint": "stylelint **/*.scss **/**/**/*.scss",
+    "stylelint-fix": "stylelint **/*.scss **/**/**/*.scss --fix",
+    "cml": "npm run stylelint-fix && npm run stylelint && git status && npm run cm",
+    "cm": "cz"
+
   },
   "eslintConfig": {
     "extends": [
@@ -81,7 +85,13 @@
     "prop-types": "^15.8.1",
     "sass": "^1.69.4",
     "storybook": "^7.0.7",
-    "storybook-source-code-addon": "^1.2.0"
+    "storybook-source-code-addon": "^1.2.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.3.0"
   },
   "config": {
     "commitizen": {
