@@ -32,9 +32,8 @@
     "build-storybook": "storybook build",
     "stylelint": "stylelint **/*.scss **/**/**/*.scss",
     "stylelint-fix": "stylelint **/*.scss **/**/**/*.scss --fix",
-    "cml": "npm run stylelint-fix && npm run stylelint && git status && npm run cm",
+    "cml": "clear && npm run stylelint-fix && npm run stylelint && git status && npm run cm",
     "cm": "cz"
-
   },
   "eslintConfig": {
     "extends": [
